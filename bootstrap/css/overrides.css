@@ -14,3 +14,402 @@
 	text-align: left;
 	padding-bottom:20px;
 }
+
+.flip{
+	cursor:pointer;
+}
+
+.years-container{
+	display:none;
+	border:none;
+	-webkit-box-shadow: inset 0 0 5px 5px #6C7477;
+	box-shadow: inset 0 0 5px 5px #6C7477;
+	background: #F1F2F6;
+	margin-top: 10px;
+}
+
+.years-centered-container{
+    vertical-align: middle;
+	width:530px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.year-1923 {
+	text-align:right;
+	padding-right: 10px;
+	padding-top:20px;
+}
+
+.year-1924 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1925 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1926 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1927 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1928 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1929 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1930 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1931 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1932 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1933 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1934 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1935 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1936 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1937 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1938 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1939 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1940 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1941 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1942 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1943 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1944 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1945 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1946 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1947 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1948 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1949 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1950 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1951 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1952 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1953 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1954 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1955 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1956 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1957 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1958 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1959 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1960 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1961 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1962 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1963 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1964 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1965 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1966 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1967 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1968 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1969 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1970 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1971 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1972 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1973 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1974 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1975 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1976 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1977 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1978 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1979 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1980 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1981 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1982 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1983 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1984 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1985 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1986 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1987 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1988 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1989 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-1990 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-1991 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1992 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1993 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-1994 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1995 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1996 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1997 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1998 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-1999 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-2000 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-2001 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2002 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2003 {
+	text-align:left;
+	padding-right: 10px;
+}
+.year-2004 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2005 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2006 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2007 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2008 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2009 {
+	text-align:left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.year-2010 {
+	padding-top:20px;
+	text-align:left;
+}
+.year-2011 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2012 {
+	text-align:left;
+	margin-top:20px;
+}
+.year-2013 {
+	text-align:left;
+	padding-right: 10px;
+}
+4
+

@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<script type="text/javascript" src="jquery.js"></script>
+		
+		<script type="text/javascript">	
+			$(document).ready(function(){
+			$(".flip").click(function(){
+			    $(this).next().slideToggle("slow");
+			  });
+			});
+		</script>	
+	<link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
     <meta charset="utf-8">
-    <title>TimeLine</title>
+    <title>TIMELine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MIT 4.110 Design Across Scales Project 1">
     <meta name="author" content="Carolyn Zhang">
@@ -28,7 +38,7 @@
 
     <div class="container">
       <div class="page-header">
-        <h1>Timeline</h1>
+        <h1>TIMEline</h1>
       </div>
       
       <div class="decade-container first-row" id="1920s">
@@ -36,18 +46,34 @@
           <div class="square-markers"></div>
           <div class="line-markers"></div>
         <div class="decade-barcode">
-          <a href="#"><img src="images/Decades/DEC_20.jpg" alt="" />
-        </div>
-        <div class = "years-container">
-  <!--         <a href="#"><img src="images/Years/1923.jpg" alt="" />
-          <a href="#"><img src="images/Years/1924.jpg" alt="" />
-          <a href="#"><img src="images/Years/1925.jpg" alt="" />
-          <a href="#"><img src="images/Years/1926.jpg" alt="" />
-          <a href="#"><img src="images/Years/1927.jpg" alt="" />
-          <a href="#"><img src="images/Years/1928.jpg" alt="" />
-          <a href="#"><img src="images/Years/1929.jpg" alt="" />
- -->   
-        </div>
+          <a href="#" class="flip"><img src="images/Decades/DEC_20.jpg" alt="" />
+		  <div class = "years-container">
+			<div class="years-centered-container">
+			<div class = "year-1923">
+				<a href="#"><img src="images/Years/1923.jpg" alt="" />
+			</div>
+			<div class = "year-1924">
+				<a href="#"><img src="images/Years/1924.jpg" alt="" />
+			</div>
+			<div class = "year-1925">
+				<a href="#"><img src="images/Years/1925.jpg" alt="" />
+			</div>
+			<div class = "year-1926">
+				<a href="#"><img src="images/Years/1926.jpg" alt="" />
+			</div>
+			<div class = "year-1927">
+				<a href="#"><img src="images/Years/1927.jpg" alt="" />
+			</div>
+			<div class = "year-1928">
+				<a href="#"><img src="images/Years/1928.jpg" alt="" />
+			</div>
+			<div class = "year-1929">
+				<a href="#"><img src="images/Years/1929.jpg" alt="" />
+			</div>
+		</div>
+		</div>
+		</div>
+        
       </div>
 
       <div class="decade-container" id="1930s">
@@ -55,7 +81,42 @@
           <div class="square-markers"></div>
           <div class="line-markers"></div>
         <div class="decade-barcode">
-          <a href="#"><img src="images/Decades/DEC_30.jpg" alt="" />
+		  <a href="#" class="flip"><img src="images/Decades/DEC_30.jpg" alt="" />
+		  <div class = "years-container">
+		  <div class="years-centered-container">
+			<div class = "year-1930">
+				<a href="#"><img src="images/Years/1930.jpg" alt="" />
+			</div>
+			<div class = "year-1931">
+				<a href="#"><img src="images/Years/1931.jpg" alt="" />
+			</div>
+			<div class = "year-1932">
+				<a href="#"><img src="images/Years/1932.jpg" alt="" />
+			</div>
+			<div class="years-centered-container">
+			<div class = "year-1933">
+				<a href="#"><img src="images/Years/1933.jpg" alt="" />
+			</div>
+			<div class = "year-1934">
+				<a href="#"><img src="images/Years/1934.jpg" alt="" />
+			</div>
+			<div class = "year-1935">
+				<a href="#"><img src="images/Years/1935.jpg" alt="" />
+			</div>
+			<div class = "year-1936">
+				<a href="#"><img src="images/Years/1936.jpg" alt="" />
+			</div>
+			<div class = "year-1937">
+				<a href="#"><img src="images/Years/1937.jpg" alt="" />
+			</div>
+			<div class = "year-1938">
+				<a href="#"><img src="images/Years/1938.jpg" alt="" />
+			</div>
+			<div class = "year-1939">
+				<a href="#"><img src="images/Years/1939.jpg" alt="" />
+			</div>
+		</div>
+		</div>
         </div>
         <div class = "years-container"></div>
       </div>
@@ -142,22 +203,6 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
