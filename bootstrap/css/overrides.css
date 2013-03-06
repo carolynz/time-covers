@@ -1,0 +1,16 @@
+.decade-container{
+	padding-bottom:40px;
+}
+
+.decade-container.first-row{
+	text-align: right;
+}
+
+.decade-container.last-row{
+	text-align: left;
+}
+
+.years-container{
+	text-align: left;
+	padding-bottom:20px;
+}
