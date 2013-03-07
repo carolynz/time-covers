@@ -94,6 +94,7 @@ body{
 	text-align:right;
 	margin-right:10px;
 	margin-bottom:20px;
+	position:relative;
 }
 
 .line{
@@ -168,4 +169,13 @@ body{
 
 .line.end{
 	margin-right:0px;
+}
+
+.link44 {
+	z-index:1;
+	position:absolute;
+	background:#000000;
+	text-align:right;
+	margin-right:10px;
+	margin-bottom:20px;
 }
