@@ -94,6 +94,7 @@ body{
 	text-align:right;
 	margin-right:10px;
 	margin-bottom:20px;
+	position:relative;
 }
 
 .line{
@@ -168,9 +169,4 @@ body{
 
 .line.end{
 	margin-right:0px;
-}
-
-.coverup{
-	background-color:#ffffff;
-	height:100px;
 }
