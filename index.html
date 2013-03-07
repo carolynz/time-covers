@@ -3,13 +3,22 @@
 <head>
 	<script type="text/javascript" src="jquery.js"></script>
 
-  <script type="text/javascript">	
-  $(document).ready(function(){
-   $(".flip").click(function(){
-     $(this).next().slideToggle("slow");
-   });
- });
-  </script>	
+	  <script type="text/javascript">	
+	  $(document).ready(function(){
+			$(".flip").click(function(){
+				var clicked = $(this).next();
+				$(".years-container").not(clicked).slideUp("slow");
+				clicked.slideToggle("slow");
+			});
+		});
+	  </script>	
+	 <script type="text/javascript">
+		$(document).ready(function(){
+			$(".flip2").click(function(){
+				$(this).next().slideToggle("slow");
+			});
+		});
+	</script>
   <link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
   <meta charset="utf-8">
   <title>TimeLine</title>
@@ -38,11 +47,33 @@
   <div class="container">
     <div class="page-header">
       <h1>TimeLine</h1>
+	  <div id="nav_bar">
+		<ul class = "flip2">
+			<li><a href="#">CATEGORY</a></li></ul>
+			 <ul class="hide-cats">
+				<li><a href="#">PRESIDENTIAL ELECTIONS</a></li>
+				<li><a href="#">WWII</a></li>
+				<li><a href="#">KENNEDYS</a></li>
+				<li><a href="#">HEALTH AND MEDICINE</a></li>
+				<br/>
+				<li><a href="#">SPACE EXPLORATION</a></li>				
+				<li><a href="#">NIXON</a></li>
+				<li><a href="#">HOMOSEXUALITY</a></li>
+				<li><a href="#">MIDDLE EAST</a></li>
+				<li><a href="#">COMMUNISM</a></li>
+			</ul>
+		
+	</div>
     </div>
 
     <div class="decade-container first-row" id="1920s">
+		
+		<div class="year-text">
+			<div class="empty-div-for-beginning"></div>
+			1923
+		</div>
       <div class="decade-markers">
-        <div id="empty-div-for-beginning"></div>
+        <div class="empty-div-for-beginning"></div>
         <div class="line year-line w44"></div>
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -58,6 +89,10 @@
       </div>
       <div class = "years-container" id="yc20s">
         <div class="years-centered-container">
+		<div class="year-text">
+			<div class="empty-div-for-beginning2"></div>
+			1923
+		</div>
           <div class = "w44" id = "y1923">
 			<img src="images/Years/1923.jpg" alt=""usemap="mapname23" />
 			<map name="mapname23">
@@ -107,7 +142,9 @@
 				<area shape="rect" coords="[430px, 0px, 440px, 100px]" href="http://www.time.com/time/covers/0,16641,19231231,00.html" alt="area alternative text" title="Dec. 31, 1923" />
 			</map>
           </div>
-		  		  
+		  <div class="year-text">
+			1924
+		</div>		  
           <div class = "w52">
             <img src="images/Years/1924.jpg" alt=""usemap="mapname24" />
 			<map name="mapname24">
@@ -165,6 +202,9 @@
 				<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19241229,00.html" alt="area alternative text" title="Dec. 29, 1924" />
 			</map>
           </div>
+		  <div class="year-text">
+			1925
+		</div>
           <div class = "w52">
             <img src="images/Years/1925.jpg" alt=""usemap="mapname25" />
 			<map name="mapname25">
@@ -222,6 +262,9 @@
 				<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19251228,00.html" alt="area alternative text" title="Dec. 28, 1925" />
 			</map>
           </div>
+		  <div class="year-text">
+			1926
+		</div>
           <div class = "w52">
             <img src="images/Years/1926.jpg" alt=""usemap="mapname26" />
 			<map name="mapname26">
@@ -279,62 +322,69 @@
 				<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19261227,00.html" alt="area alternative text" title="Dec. 27, 1926" />
 			</map>
           </div>
+		  <div class="year-text">
+			1927
+		</div>
           <div class = "w52">
-            <img src="images/Years/1927.jpg" alt=""usemap="mapname27" /><map name="mapname27">
-<area shape="rect" coords="[0px, 0px, 10px, 100px]" href="http://www.time.com/time/covers/0,16641,19270103,00.html" alt="area alternative text" title="Jan. 3, 1927" />
-<area shape="rect" coords="[10px, 0px, 20px, 100px]" href="http://www.time.com/time/covers/0,16641,19270110,00.html" alt="area alternative text" title="Jan. 10, 1927" />
-<area shape="rect" coords="[20px, 0px, 30px, 100px]" href="http://www.time.com/time/covers/0,16641,19270117,00.html" alt="area alternative text" title="Jan. 17, 1927" />
-<area shape="rect" coords="[30px, 0px, 40px, 100px]" href="http://www.time.com/time/covers/0,16641,19270124,00.html" alt="area alternative text" title="Jan. 24, 1927" />
-<area shape="rect" coords="[40px, 0px, 50px, 100px]" href="http://www.time.com/time/covers/0,16641,19270131,00.html" alt="area alternative text" title="Jan. 31, 1927" />
-<area shape="rect" coords="[50px, 0px, 60px, 100px]" href="http://www.time.com/time/covers/0,16641,19270207,00.html" alt="area alternative text" title="Feb. 7, 1927" />
-<area shape="rect" coords="[60px, 0px, 70px, 100px]" href="http://www.time.com/time/covers/0,16641,19270214,00.html" alt="area alternative text" title="Feb. 14, 1927" />
-<area shape="rect" coords="[70px, 0px, 80px, 100px]" href="http://www.time.com/time/covers/0,16641,19270221,00.html" alt="area alternative text" title="Feb. 21, 1927" />
-<area shape="rect" coords="[80px, 0px, 90px, 100px]" href="http://www.time.com/time/covers/0,16641,19270228,00.html" alt="area alternative text" title="Feb. 28, 1927" />
-<area shape="rect" coords="[90px, 0px, 100px, 100px]" href="http://www.time.com/time/covers/0,16641,19270307,00.html" alt="area alternative text" title="Mar. 7, 1927" />
-<area shape="rect" coords="[100px, 0px, 110px, 100px]" href="http://www.time.com/time/covers/0,16641,19270314,00.html" alt="area alternative text" title="Mar. 14, 1927" />
-<area shape="rect" coords="[110px, 0px, 120px, 100px]" href="http://www.time.com/time/covers/0,16641,19270321,00.html" alt="area alternative text" title="Mar. 21, 1927" />
-<area shape="rect" coords="[120px, 0px, 130px, 100px]" href="http://www.time.com/time/covers/0,16641,19270328,00.html" alt="area alternative text" title="Mar. 28, 1927" />
-<area shape="rect" coords="[130px, 0px, 140px, 100px]" href="http://www.time.com/time/covers/0,16641,19270404,00.html" alt="area alternative text" title="Apr. 4, 1927" />
-<area shape="rect" coords="[140px, 0px, 150px, 100px]" href="http://www.time.com/time/covers/0,16641,19270411,00.html" alt="area alternative text" title="Apr. 11, 1927" />
-<area shape="rect" coords="[150px, 0px, 160px, 100px]" href="http://www.time.com/time/covers/0,16641,19270418,00.html" alt="area alternative text" title="Apr. 18, 1927" />
-<area shape="rect" coords="[160px, 0px, 170px, 100px]" href="http://www.time.com/time/covers/0,16641,19270425,00.html" alt="area alternative text" title="Apr. 25, 1927" />
-<area shape="rect" coords="[170px, 0px, 180px, 100px]" href="http://www.time.com/time/covers/0,16641,19270502,00.html" alt="area alternative text" title="May 2, 1927" />
-<area shape="rect" coords="[180px, 0px, 190px, 100px]" href="http://www.time.com/time/covers/0,16641,19270509,00.html" alt="area alternative text" title="May 9, 1927" />
-<area shape="rect" coords="[190px, 0px, 200px, 100px]" href="http://www.time.com/time/covers/0,16641,19270516,00.html" alt="area alternative text" title="May 16, 1927" />
-<area shape="rect" coords="[200px, 0px, 210px, 100px]" href="http://www.time.com/time/covers/0,16641,19270523,00.html" alt="area alternative text" title="May 23, 1927" />
-<area shape="rect" coords="[210px, 0px, 220px, 100px]" href="http://www.time.com/time/covers/0,16641,19270530,00.html" alt="area alternative text" title="May 30, 1927" />
-<area shape="rect" coords="[220px, 0px, 230px, 100px]" href="http://www.time.com/time/covers/0,16641,19270606,00.html" alt="area alternative text" title="June 6, 1927" />
-<area shape="rect" coords="[230px, 0px, 240px, 100px]" href="http://www.time.com/time/covers/0,16641,19270613,00.html" alt="area alternative text" title="June 13, 1927" />
-<area shape="rect" coords="[240px, 0px, 250px, 100px]" href="http://www.time.com/time/covers/0,16641,19270620,00.html" alt="area alternative text" title="June 20, 1927" />
-<area shape="rect" coords="[250px, 0px, 260px, 100px]" href="http://www.time.com/time/covers/0,16641,19270627,00.html" alt="area alternative text" title="June 27, 1927" />
-<area shape="rect" coords="[260px, 0px, 270px, 100px]" href="http://www.time.com/time/covers/0,16641,19270704,00.html" alt="area alternative text" title="July 4, 1927" />
-<area shape="rect" coords="[270px, 0px, 280px, 100px]" href="http://www.time.com/time/covers/0,16641,19270711,00.html" alt="area alternative text" title="July 11, 1927" />
-<area shape="rect" coords="[280px, 0px, 290px, 100px]" href="http://www.time.com/time/covers/0,16641,19270718,00.html" alt="area alternative text" title="July 18, 1927" />
-<area shape="rect" coords="[290px, 0px, 300px, 100px]" href="http://www.time.com/time/covers/0,16641,19270725,00.html" alt="area alternative text" title="July 25, 1927" />
-<area shape="rect" coords="[300px, 0px, 310px, 100px]" href="http://www.time.com/time/covers/0,16641,19270801,00.html" alt="area alternative text" title="Aug. 1, 1927" />
-<area shape="rect" coords="[310px, 0px, 320px, 100px]" href="http://www.time.com/time/covers/0,16641,19270808,00.html" alt="area alternative text" title="Aug. 8, 1927" />
-<area shape="rect" coords="[320px, 0px, 330px, 100px]" href="http://www.time.com/time/covers/0,16641,19270815,00.html" alt="area alternative text" title="Aug. 15, 1927" />
-<area shape="rect" coords="[330px, 0px, 340px, 100px]" href="http://www.time.com/time/covers/0,16641,19270822,00.html" alt="area alternative text" title="Aug. 22, 1927" />
-<area shape="rect" coords="[340px, 0px, 350px, 100px]" href="http://www.time.com/time/covers/0,16641,19270829,00.html" alt="area alternative text" title="Aug. 29, 1927" />
-<area shape="rect" coords="[350px, 0px, 360px, 100px]" href="http://www.time.com/time/covers/0,16641,19270905,00.html" alt="area alternative text" title="Sep. 5, 1927" />
-<area shape="rect" coords="[360px, 0px, 370px, 100px]" href="http://www.time.com/time/covers/0,16641,19270912,00.html" alt="area alternative text" title="Sep. 12, 1927" />
-<area shape="rect" coords="[370px, 0px, 380px, 100px]" href="http://www.time.com/time/covers/0,16641,19270919,00.html" alt="area alternative text" title="Sep. 19, 1927" />
-<area shape="rect" coords="[380px, 0px, 390px, 100px]" href="http://www.time.com/time/covers/0,16641,19270926,00.html" alt="area alternative text" title="Sep. 26, 1927" />
-<area shape="rect" coords="[390px, 0px, 400px, 100px]" href="http://www.time.com/time/covers/0,16641,19271003,00.html" alt="area alternative text" title="Oct. 3, 1927" />
-<area shape="rect" coords="[400px, 0px, 410px, 100px]" href="http://www.time.com/time/covers/0,16641,19271010,00.html" alt="area alternative text" title="Oct. 10, 1927" />
-<area shape="rect" coords="[410px, 0px, 420px, 100px]" href="http://www.time.com/time/covers/0,16641,19271017,00.html" alt="area alternative text" title="Oct. 17, 1927" />
-<area shape="rect" coords="[420px, 0px, 430px, 100px]" href="http://www.time.com/time/covers/0,16641,19271024,00.html" alt="area alternative text" title="Oct. 24, 1927" />
-<area shape="rect" coords="[430px, 0px, 440px, 100px]" href="http://www.time.com/time/covers/0,16641,19271031,00.html" alt="area alternative text" title="Oct. 31, 1927" />
-<area shape="rect" coords="[440px, 0px, 450px, 100px]" href="http://www.time.com/time/covers/0,16641,19271107,00.html" alt="area alternative text" title="Nov. 7, 1927" />
-<area shape="rect" coords="[450px, 0px, 460px, 100px]" href="http://www.time.com/time/covers/0,16641,19271114,00.html" alt="area alternative text" title="Nov. 14, 1927" />
-<area shape="rect" coords="[460px, 0px, 470px, 100px]" href="http://www.time.com/time/covers/0,16641,19271121,00.html" alt="area alternative text" title="Nov. 21, 1927" />
-<area shape="rect" coords="[470px, 0px, 480px, 100px]" href="http://www.time.com/time/covers/0,16641,19271128,00.html" alt="area alternative text" title="Nov. 28, 1927" />
-<area shape="rect" coords="[480px, 0px, 490px, 100px]" href="http://www.time.com/time/covers/0,16641,19271205,00.html" alt="area alternative text" title="Dec. 5, 1927" />
-<area shape="rect" coords="[490px, 0px, 500px, 100px]" href="http://www.time.com/time/covers/0,16641,19271212,00.html" alt="area alternative text" title="Dec. 12, 1927" />
-<area shape="rect" coords="[500px, 0px, 510px, 100px]" href="http://www.time.com/time/covers/0,16641,19271219,00.html" alt="area alternative text" title="Dec. 19, 1927" />
-<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19271226,00.html" alt="area alternative text" title="Dec. 26, 1927" />
-</map>
+            <img src="images/Years/1927.jpg" alt=""usemap="mapname27" />
+				<map name="mapname27">
+					<area shape="rect" coords="[0px, 0px, 10px, 100px]" href="http://www.time.com/time/covers/0,16641,19270103,00.html" alt="area alternative text" title="Jan. 3, 1927" />
+					<area shape="rect" coords="[10px, 0px, 20px, 100px]" href="http://www.time.com/time/covers/0,16641,19270110,00.html" alt="area alternative text" title="Jan. 10, 1927" />
+					<area shape="rect" coords="[20px, 0px, 30px, 100px]" href="http://www.time.com/time/covers/0,16641,19270117,00.html" alt="area alternative text" title="Jan. 17, 1927" />
+					<area shape="rect" coords="[30px, 0px, 40px, 100px]" href="http://www.time.com/time/covers/0,16641,19270124,00.html" alt="area alternative text" title="Jan. 24, 1927" />
+					<area shape="rect" coords="[40px, 0px, 50px, 100px]" href="http://www.time.com/time/covers/0,16641,19270131,00.html" alt="area alternative text" title="Jan. 31, 1927" />
+					<area shape="rect" coords="[50px, 0px, 60px, 100px]" href="http://www.time.com/time/covers/0,16641,19270207,00.html" alt="area alternative text" title="Feb. 7, 1927" />
+					<area shape="rect" coords="[60px, 0px, 70px, 100px]" href="http://www.time.com/time/covers/0,16641,19270214,00.html" alt="area alternative text" title="Feb. 14, 1927" />
+					<area shape="rect" coords="[70px, 0px, 80px, 100px]" href="http://www.time.com/time/covers/0,16641,19270221,00.html" alt="area alternative text" title="Feb. 21, 1927" />
+					<area shape="rect" coords="[80px, 0px, 90px, 100px]" href="http://www.time.com/time/covers/0,16641,19270228,00.html" alt="area alternative text" title="Feb. 28, 1927" />
+					<area shape="rect" coords="[90px, 0px, 100px, 100px]" href="http://www.time.com/time/covers/0,16641,19270307,00.html" alt="area alternative text" title="Mar. 7, 1927" />
+					<area shape="rect" coords="[100px, 0px, 110px, 100px]" href="http://www.time.com/time/covers/0,16641,19270314,00.html" alt="area alternative text" title="Mar. 14, 1927" />
+					<area shape="rect" coords="[110px, 0px, 120px, 100px]" href="http://www.time.com/time/covers/0,16641,19270321,00.html" alt="area alternative text" title="Mar. 21, 1927" />
+					<area shape="rect" coords="[120px, 0px, 130px, 100px]" href="http://www.time.com/time/covers/0,16641,19270328,00.html" alt="area alternative text" title="Mar. 28, 1927" />
+					<area shape="rect" coords="[130px, 0px, 140px, 100px]" href="http://www.time.com/time/covers/0,16641,19270404,00.html" alt="area alternative text" title="Apr. 4, 1927" />
+					<area shape="rect" coords="[140px, 0px, 150px, 100px]" href="http://www.time.com/time/covers/0,16641,19270411,00.html" alt="area alternative text" title="Apr. 11, 1927" />
+					<area shape="rect" coords="[150px, 0px, 160px, 100px]" href="http://www.time.com/time/covers/0,16641,19270418,00.html" alt="area alternative text" title="Apr. 18, 1927" />
+					<area shape="rect" coords="[160px, 0px, 170px, 100px]" href="http://www.time.com/time/covers/0,16641,19270425,00.html" alt="area alternative text" title="Apr. 25, 1927" />
+					<area shape="rect" coords="[170px, 0px, 180px, 100px]" href="http://www.time.com/time/covers/0,16641,19270502,00.html" alt="area alternative text" title="May 2, 1927" />
+					<area shape="rect" coords="[180px, 0px, 190px, 100px]" href="http://www.time.com/time/covers/0,16641,19270509,00.html" alt="area alternative text" title="May 9, 1927" />
+					<area shape="rect" coords="[190px, 0px, 200px, 100px]" href="http://www.time.com/time/covers/0,16641,19270516,00.html" alt="area alternative text" title="May 16, 1927" />
+					<area shape="rect" coords="[200px, 0px, 210px, 100px]" href="http://www.time.com/time/covers/0,16641,19270523,00.html" alt="area alternative text" title="May 23, 1927" />
+					<area shape="rect" coords="[210px, 0px, 220px, 100px]" href="http://www.time.com/time/covers/0,16641,19270530,00.html" alt="area alternative text" title="May 30, 1927" />
+					<area shape="rect" coords="[220px, 0px, 230px, 100px]" href="http://www.time.com/time/covers/0,16641,19270606,00.html" alt="area alternative text" title="June 6, 1927" />
+					<area shape="rect" coords="[230px, 0px, 240px, 100px]" href="http://www.time.com/time/covers/0,16641,19270613,00.html" alt="area alternative text" title="June 13, 1927" />
+					<area shape="rect" coords="[240px, 0px, 250px, 100px]" href="http://www.time.com/time/covers/0,16641,19270620,00.html" alt="area alternative text" title="June 20, 1927" />
+					<area shape="rect" coords="[250px, 0px, 260px, 100px]" href="http://www.time.com/time/covers/0,16641,19270627,00.html" alt="area alternative text" title="June 27, 1927" />
+					<area shape="rect" coords="[260px, 0px, 270px, 100px]" href="http://www.time.com/time/covers/0,16641,19270704,00.html" alt="area alternative text" title="July 4, 1927" />
+					<area shape="rect" coords="[270px, 0px, 280px, 100px]" href="http://www.time.com/time/covers/0,16641,19270711,00.html" alt="area alternative text" title="July 11, 1927" />
+					<area shape="rect" coords="[280px, 0px, 290px, 100px]" href="http://www.time.com/time/covers/0,16641,19270718,00.html" alt="area alternative text" title="July 18, 1927" />
+					<area shape="rect" coords="[290px, 0px, 300px, 100px]" href="http://www.time.com/time/covers/0,16641,19270725,00.html" alt="area alternative text" title="July 25, 1927" />
+					<area shape="rect" coords="[300px, 0px, 310px, 100px]" href="http://www.time.com/time/covers/0,16641,19270801,00.html" alt="area alternative text" title="Aug. 1, 1927" />
+					<area shape="rect" coords="[310px, 0px, 320px, 100px]" href="http://www.time.com/time/covers/0,16641,19270808,00.html" alt="area alternative text" title="Aug. 8, 1927" />
+					<area shape="rect" coords="[320px, 0px, 330px, 100px]" href="http://www.time.com/time/covers/0,16641,19270815,00.html" alt="area alternative text" title="Aug. 15, 1927" />
+					<area shape="rect" coords="[330px, 0px, 340px, 100px]" href="http://www.time.com/time/covers/0,16641,19270822,00.html" alt="area alternative text" title="Aug. 22, 1927" />
+					<area shape="rect" coords="[340px, 0px, 350px, 100px]" href="http://www.time.com/time/covers/0,16641,19270829,00.html" alt="area alternative text" title="Aug. 29, 1927" />
+					<area shape="rect" coords="[350px, 0px, 360px, 100px]" href="http://www.time.com/time/covers/0,16641,19270905,00.html" alt="area alternative text" title="Sep. 5, 1927" />
+					<area shape="rect" coords="[360px, 0px, 370px, 100px]" href="http://www.time.com/time/covers/0,16641,19270912,00.html" alt="area alternative text" title="Sep. 12, 1927" />
+					<area shape="rect" coords="[370px, 0px, 380px, 100px]" href="http://www.time.com/time/covers/0,16641,19270919,00.html" alt="area alternative text" title="Sep. 19, 1927" />
+					<area shape="rect" coords="[380px, 0px, 390px, 100px]" href="http://www.time.com/time/covers/0,16641,19270926,00.html" alt="area alternative text" title="Sep. 26, 1927" />
+					<area shape="rect" coords="[390px, 0px, 400px, 100px]" href="http://www.time.com/time/covers/0,16641,19271003,00.html" alt="area alternative text" title="Oct. 3, 1927" />
+					<area shape="rect" coords="[400px, 0px, 410px, 100px]" href="http://www.time.com/time/covers/0,16641,19271010,00.html" alt="area alternative text" title="Oct. 10, 1927" />
+					<area shape="rect" coords="[410px, 0px, 420px, 100px]" href="http://www.time.com/time/covers/0,16641,19271017,00.html" alt="area alternative text" title="Oct. 17, 1927" />
+					<area shape="rect" coords="[420px, 0px, 430px, 100px]" href="http://www.time.com/time/covers/0,16641,19271024,00.html" alt="area alternative text" title="Oct. 24, 1927" />
+					<area shape="rect" coords="[430px, 0px, 440px, 100px]" href="http://www.time.com/time/covers/0,16641,19271031,00.html" alt="area alternative text" title="Oct. 31, 1927" />
+					<area shape="rect" coords="[440px, 0px, 450px, 100px]" href="http://www.time.com/time/covers/0,16641,19271107,00.html" alt="area alternative text" title="Nov. 7, 1927" />
+					<area shape="rect" coords="[450px, 0px, 460px, 100px]" href="http://www.time.com/time/covers/0,16641,19271114,00.html" alt="area alternative text" title="Nov. 14, 1927" />
+					<area shape="rect" coords="[460px, 0px, 470px, 100px]" href="http://www.time.com/time/covers/0,16641,19271121,00.html" alt="area alternative text" title="Nov. 21, 1927" />
+					<area shape="rect" coords="[470px, 0px, 480px, 100px]" href="http://www.time.com/time/covers/0,16641,19271128,00.html" alt="area alternative text" title="Nov. 28, 1927" />
+					<area shape="rect" coords="[480px, 0px, 490px, 100px]" href="http://www.time.com/time/covers/0,16641,19271205,00.html" alt="area alternative text" title="Dec. 5, 1927" />
+					<area shape="rect" coords="[490px, 0px, 500px, 100px]" href="http://www.time.com/time/covers/0,16641,19271212,00.html" alt="area alternative text" title="Dec. 12, 1927" />
+					<area shape="rect" coords="[500px, 0px, 510px, 100px]" href="http://www.time.com/time/covers/0,16641,19271219,00.html" alt="area alternative text" title="Dec. 19, 1927" />
+					<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19271226,00.html" alt="area alternative text" title="Dec. 26, 1927" />
+				</map>
           </div>
+		  <div class="year-text">
+			1928
+		</div>
           <div class = "w53">
             <img src="images/Years/1928.jpg" alt=""usemap="mapname28" />
 			<map name="mapname28">
@@ -393,6 +443,9 @@
 				<area shape="rect" coords="[520px, 0px, 530px, 100px]" href="http://www.time.com/time/covers/0,16641,19281231,00.html" alt="area alternative text" title="Dec. 31, 1928" />
 			</map>
           </div>
+		  <div class="year-text">
+			1929
+		</div>
           <div class = "w52">
             <img src="images/Years/1929.jpg" alt=""usemap="mapname29" />
 			<map name="mapname29">
@@ -456,6 +509,9 @@
     <!-- close decade container for 1920s -->
 
     <div class="decade-container" id="1930s">
+		<div class="year-text">
+			1930
+		</div>
       <div class="decade-markers"></div>
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -474,6 +530,9 @@
       </div>
       <div class = "years-container" id="yc30s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1930
+		</div>
           <div class = "w52">
             <img src="images/Years/1930.jpg" alt=""usemap="mapname30" />
 			<map name="mapname30">
@@ -531,6 +590,9 @@
 				<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19301229,00.html" alt="area alternative text" title="Dec. 29, 1930" />
 			</map>
           </div>
+		  <div class="year-text">
+			1931
+		</div>
           <div class = "w52">
             <img src="images/Years/1931.jpg" alt=""usemap="mapname31" />
 			<map name="mapname31">
@@ -588,6 +650,9 @@
 				<area shape="rect" coords="[510px, 0px, 520px, 100px]" href="http://www.time.com/time/covers/0,16641,19311228,00.html" alt="area alternative text" title="Dec. 28, 1931" />
 			</map>
           </div>
+		  <div class="year-text">
+			1932
+		</div>
           <div class = "w51">
             <img src="images/Years/1932.jpg" alt=""usemap="mapname32" />
 			<map name="mapname32">
@@ -644,24 +709,45 @@
 				<area shape="rect" coords="[500px, 0px, 510px, 100px]" href="http://www.time.com/time/covers/0,16641,19321226,00.html" alt="area alternative text" title="Dec. 26, 1932" />
 			</map>
           </div>
+		  <div class="year-text">
+			1933
+		</div>
            <div class = "w52">
             <img src="images/Years/1933.jpg" alt="" usemap="mapname33"/>
           </div>
+		  <div class="year-text">
+			1934
+		</div>
           <div class = "w53">
             <img src="images/Years/1934.jpg" alt="" usemap="map1934"/>
           </div>
+		  <div class="year-text">
+			1935
+		</div>
           <div class = "w52">
             <img src="images/Years/1935.jpg" alt="" usemap="map1935"/>
           </div>
+		  <div class="year-text">
+			1936
+		</div>
           <div class = "w52">
             <img src="images/Years/1936.jpg" alt="" usemap="map1936"/>
           </div>
+		  <div class="year-text">
+			1937
+		</div>
           <div class = "w52">
             <img src="images/Years/1937.jpg" alt="" usemap="map1937"/>
           </div>
+		  <div class="year-text">
+			1938
+		</div>
           <div class = "w52">
             <img src="images/Years/1938.jpg" alt="" usemap="map1938"/>
           </div>
+		  <div class="year-text">
+			1939
+		</div>
           <div class = "w52">
             <img src="images/Years/1939.jpg" alt="" usemap="map1939"/>
           </div>
@@ -670,6 +756,9 @@
     </div>      <!-- close decade-container for 1930s -->
 
     <div class="decade-container" id="1940s">
+		<div class="year-text">
+			1940
+		</div>
       <div class="decade-markers">
         <div class="line year-line w53"></div>
         <div class="line year-line w52"></div>
@@ -690,33 +779,63 @@
           
       <div class = "years-container" id="yc40s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1940
+		</div>
           <div class = "w53">
             <img src="images/Years/1940.jpg" alt="" usemap="map1940"/>
           </div>
+		  <div class="year-text">
+			1941
+		</div>
           <div class = "w52">
             <img src="images/Years/1941.jpg" alt="" usemap="map1941"/>
           </div>
+		  <div class="year-text">
+			1942
+		</div>
           <div class = "w52">
             <img src="images/Years/1942.jpg" alt="" usemap="map1942"/>
           </div>
+		  <div class="year-text">
+			1943
+		</div>
            <div class = "w52">
             <img src="images/Years/1943.jpg" alt="" usemap="map1943"/>
           </div>
+		  <div class="year-text">
+			1944
+		</div>
           <div class = "w52">
             <img src="images/Years/1944.jpg" alt="" usemap="map1944/>
           </div>
+		  <div class="year-text">
+			1945
+		</div>
           <div class = "w53">
             <img src="images/Years/1945.jpg" alt="" usemap="map1945"/>
           </div>
+		  <div class="year-text">
+			1946
+		</div>
           <div class = "w52">
             <img src="images/Years/1946.jpg" alt="" usemap="map1946"/>
           </div>
+		  <div class="year-text">
+			1947
+		</div>
           <div class = "w52">
             <img src="images/Years/1947.jpg" alt="" usemap="map1947"/>
           </div>
+		  <div class="year-text">
+			1948
+		</div>
           <div class = "w52">
             <img src="images/Years/1948.jpg" alt="" usemap="map1948"/>
           </div>
+		  <div class="year-text">
+			1949
+		</div>
           <div class = "w52">
             <img src="images/Years/1949.jpg" alt="" usemap="map1949"/>
           </div>
@@ -726,6 +845,9 @@
 
 
     <div class="decade-container" id="1950s">
+		<div class="year-text">
+			1950
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -745,33 +867,63 @@
       </div>
       <div class = "years-container" id="yc50s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1950
+		</div>
           <div class = "w52">
             <img src="images/Years/1950.jpg" alt="" usemap="map1950" />
           </div>
+		  <div class="year-text">
+			1951
+		</div>
           <div class = "w53">
             <img src="images/Years/1951.jpg" alt="" usemap="map1951"/>
           </div>
+		  <div class="year-text">
+			1952
+		</div>
           <div class = "w52">
             <img src="images/Years/1952.jpg" alt="" usemap="map1952"/>
           </div>
+		  <div class="year-text">
+			1953
+		</div>
           <div class = "w52">
             <img src="images/Years/1953.jpg" alt="" usemap="map1953"/>
           </div>
+		  <div class="year-text">
+			1954
+		</div>
           <div class = "w52">
             <img src="images/Years/1954.jpg" alt="" usemap="map1954"/>
           </div>
+		  <div class="year-text">
+			1955
+		</div>
           <div class = "w52">
             <img src="images/Years/1955.jpg" alt="" usemap="map1955"/>
           </div>
+		  <div class="year-text">
+			1956
+		</div>
           <div class = "w53">
             <img src="images/Years/1956.jpg" alt="" usemap="map1956"/>
           </div>
+		  <div class="year-text">
+			1957
+		</div>
           <div class = "w52">
             <img src="images/Years/1957.jpg" alt="" usemap="map1957"/>
           </div>
+		  <div class="year-text">
+			1958
+		</div>
           <div class = "w52">
             <img src="images/Years/1958.jpg" alt="" usemap="map1958"/>
           </div>
+		  <div class="year-text">
+			1959
+		</div>
           <div class = "w52">
             <img src="images/Years/1959.jpg" alt="" usemap="map1959"/>
           </div>
@@ -780,6 +932,9 @@
     </div>        <!-- close decade-container for 1950s-->
 
     <div class="decade-container" id="1960s">
+		<div class="year-text">
+			1960
+		</div>
       <div class="decade-markers">
         <div class="line year-line w53"></div>
         <div class="line year-line w53"></div>
@@ -799,33 +954,63 @@
       </div>
       <div class = "years-container" id="yc60s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1960
+		</div>
           <div class = "w53">
             <img src="images/Years/1960.jpg" alt="" usemap="map1960"/>
           </div>
+		  <div class="year-text">
+			1961
+		</div>
           <div class = "w53">
             <img src="images/Years/1961.jpg" alt="" usemap="map1961"/>
           </div>
+		  <div class="year-text">
+			1962
+		</div>
           <div class = "w52">
             <img src="images/Years/1962.jpg" alt="" usemap="map1962"/>
           </div>
+		  <div class="year-text">
+			1963
+		</div>
            <div class = "w52">
             <img src="images/Years/1963.jpg" alt="" usemap="map1963"/>
           </div>
+		  <div class="year-text">
+			1964
+		</div>
           <div class = "w53">
             <img src="images/Years/1964.jpg" alt="" usemap="map1964"/>
           </div>
+		  <div class="year-text">
+			1965
+		</div>
           <div class = "w53">
             <img src="images/Years/1965.jpg" alt="" usemap="map1965"/>
           </div>
+		  <div class="year-text">
+			1966
+		</div>
           <div class = "w52">
             <img src="images/Years/1966.jpg" alt="" usemap="map1966"/>
           </div>
+		  <div class="year-text">
+			1967
+		</div>
           <div class = "w52">
             <img src="images/Years/1967.jpg" alt="" usemap="map1967"/>
           </div>
+		  <div class="year-text">
+			1968
+		</div>
           <div class = "w52">
             <img src="images/Years/1968.jpg" alt="" usemap="map1968"/>
           </div>
+		  <div class="year-text">
+			1969
+		</div>
           <div class = "w52">
             <img src="images/Years/1969.jpg" alt="" usemap="map1969"/>
           </div>
@@ -834,6 +1019,9 @@
     </div>      <!-- close decade-container for 1960s -->
 
     <div class="decade-container" id="1970s">
+		<div class="year-text">
+			1970
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -853,33 +1041,63 @@
       </div>
       <div class = "years-container" id="yc70s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1970
+		</div>
           <div class = "w52">
             <img src="images/Years/1970.jpg" alt="" usemap="map1970"/>
           </div>
+		  <div class="year-text">
+			1971
+		</div>
           <div class = "w52">
             <img src="images/Years/1971.jpg" alt="" usemap="map1971"/>
           </div>
+		  <div class="year-text">
+			1972
+		</div>
           <div class = "w52">
             <img src="images/Years/1972.jpg" alt="" usemap="map1972"/>
           </div>
+		  <div class="year-text">
+			1973
+		</div>
           <div class = "w53">
             <img src="images/Years/1973.jpg" alt="" usemap="map1973"/>
           </div>
+		  <div class="year-text">
+			1974
+		</div>
           <div class = "w52">
             <img src="images/Years/1974.jpg" alt="" usemap="map1974"/>
           </div>
+		  <div class="year-text">
+			1975
+		</div>
           <div class = "w52">
             <img src="images/Years/1975.jpg" alt="" usemap="map1975"/>
           </div>
+		  <div class="year-text">
+			1976
+		</div>
           <div class = "w53">
             <img src="images/Years/1976.jpg" alt="" usemap="map1976"/>
           </div>
+		  <div class="year-text">
+			1977
+		</div>
           <div class = "w52">
             <img src="images/Years/1977.jpg" alt="" usemap="map1977"/>
           </div>
+		  <div class="year-text">
+			1978
+		</div>
           <div class = "w52">
             <img src="images/Years/1978.jpg" alt="" usemap="map1978"/>
           </div>
+		  <div class="year-text">
+			1979
+		</div>
           <div class = "w53">
             <img src="images/Years/1979.jpg" alt="" usemap="map1979"/>
           </div>
@@ -888,6 +1106,9 @@
     </div>  <!-- close decade-container for 1970s -->
 
     <div class="decade-container" id="1980s">
+		<div class="year-text">
+			1980
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -908,32 +1129,62 @@
       <div class = "years-container" id="yc80s">
         <div class="years-centered-container">
           <div class = "w52">
+		  <div class="year-text">
+			1980
+		</div>
             <img src="images/Years/1980.jpg" alt="" usemap="map1980"/>
           </div>
+		  <div class="year-text">
+			1981
+		</div>
           <div class = "w52">
             <img src="images/Years/1981.jpg" alt="" usemap="map1981"/>
           </div>
+		  <div class="year-text">
+			1982
+		</div>
           <div class = "w52">
             <img src="images/Years/1982.jpg" alt="" usemap="map1982"/>
           </div>
+		  <div class="year-text">
+			1983
+		</div>
           <div class = "w53">
             <img src="images/Years/1983.jpg" alt="" usemap="map1983"/>
           </div>
+		  <div class="year-text">
+			1984
+		</div>
           <div class = "w53">
             <img src="images/Years/1984.jpg" alt="" usemap="map1984"/>
           </div>
+		  <div class="year-text">
+			1985
+		</div>
           <div class = "w52">
             <img src="images/Years/1985.jpg" alt="" usemap="map1985"/>
           </div>
+		  <div class="year-text">
+			1986
+		</div>
           <div class = "w52">
             <img src="images/Years/1986.jpg" alt="" usemap="map1986"/>
           </div>
+		  <div class="year-text">
+			1987
+		</div>
           <div class = "w52">
             <img src="images/Years/1987.jpg" alt="" usemap="map1987"/>
           </div>
+		  <div class="year-text">
+			1988
+		</div>
           <div class = "w51">
             <img src="images/Years/1988.jpg" alt="" usemap="map1988"/>
           </div>
+		  <div class="year-text">
+			1989
+		</div>
           <div class = "w53">
             <img src="images/Years/1989.jpg" alt="" usemap="map1989"/>
           </div>
@@ -942,6 +1193,9 @@
     </div>    <!-- close decade-container for 1980s -->
 
     <div class="decade-container" id="1990s">
+		<div class="year-text">
+			1990
+		</div>
       <div class="decade-markers">
         <div class="line year-line w54"></div>
         <div class="line year-line w52"></div>
@@ -961,33 +1215,63 @@
       </div>
       <div class = "years-container" id="yc90s">
         <div class="years-centered-container">
+		<div class="year-text">
+			1990
+		</div>
           <div class = "w54">
             <img src="images/Years/1990.jpg" alt="" usemap="map1990"/>
           </div>
+		  <div class="year-text">
+			1991
+		</div>
           <div class = "w52">
             <img src="images/Years/1991.jpg" alt="" usemap="map1991"/>
           </div>
+		  <div class="year-text">
+			1992
+		</div>
           <div class = "w53">
             <img src="images/Years/1992.jpg" alt="" usemap="map1992"/>
           </div>
+		  <div class="year-text">
+			1993
+		</div>
           <div class = "w53">
             <img src="images/Years/1993.jpg" alt="" usemap="map1993"/>
           </div>
+		  <div class="year-text">
+			1994
+		</div>
           <div class = "w52">
             <img src="images/Years/1994.jpg" alt="" usemap="map1994"/>
           </div>
+		  <div class="year-text">
+			1995
+		</div>
           <div class = "w52">
             <img src="images/Years/1995.jpg" alt="" usemap="map1995"/>
           </div>
+		  <div class="year-text">
+			1996
+		</div>
           <div class = "w53">
             <img src="images/Years/1996.jpg" alt="" usemap="map1996"/>
           </div>
+		  <div class="year-text">
+			1997
+		</div>
           <div class = "w53">
             <img src="images/Years/1997.jpg" alt="" usemap="map1997"/>
           </div>
+		  <div class="year-text">
+			1998
+		</div>
           <div class = "w51">
             <img src="images/Years/1998.jpg" alt="" usemap="map1998"/>
           </div>
+		  <div class="year-text">
+			1999
+		</div>
           <div class = "w52">
             <img src="images/Years/1999.jpg" alt="" usemap="map1999"/>
           </div>
@@ -996,6 +1280,9 @@
     </div>    <!-- close decade-container for 1990s -->
 
     <div class="decade-container" id="2000s">
+		<div class="year-text">
+			2000
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w54"></div>
@@ -1015,33 +1302,63 @@
       </div>
       <div class = "years-container" id="yc00s">
         <div class="years-centered-container">
+		<div class="year-text">
+			2000
+		</div>
            <div class = "w52">
             <img src="images/Years/2000.jpg" alt="" usemap="map2000"/>
           </div>
+		  <div class="year-text">
+			2001
+		</div>
           <div class = "w54">
             <img src="images/Years/2001.jpg" alt="" usemap="map2001"/>
           </div>
+		  <div class="year-text">
+			2002
+		</div>
           <div class = "w52">
             <img src="images/Years/2002.jpg" alt="" usemap="map2002"/>
           </div>
+		  <div class="year-text">
+			2003
+		</div>
           <div class = "w54">
             <img src="images/Years/2003.jpg" alt="" usemap="map2003"/>
           </div>
+		  <div class="year-text">
+			2004
+		</div>
           <div class = "w53">
             <img src="images/Years/2004.jpg" alt="" usemap="map2004"/>
           </div>
+		  <div class="year-text">
+			2005
+		</div>
           <div class = "w51">
             <img src="images/Years/2005.jpg" alt="" usemap="map2005"/>
           </div>
+		  <div class="year-text">
+			2006
+		</div>
           <div class = "w54">
             <img src="images/Years/2006.jpg" alt="" usemap="map2006"/>
           </div>
+		  <div class="year-text">
+			2007
+		</div>
           <div class = "w56">
             <img src="images/Years/2007.jpg" alt="" usemap="map2007"/>
           </div>
+		  <div class="year-text">
+			2008
+		</div>
           <div class = "w54">
             <img src="images/Years/2008.jpg" alt="" usemap="map2008"/>
           </div>
+		  <div class="year-text">
+			2009
+		</div>
           <div class = "w55">
             <img src="images/Years/2009.jpg" alt="" usemap="map2009"/>
           </div>
@@ -1050,6 +1367,9 @@
     </div>    <!-- close decade-container for 2000s -->
 
     <div class="decade-container last-row" id="2010s">
+	<div class="year-text">
+			2010
+	</div>
       <div class="decade-markers">
         <div class="line year-line w51"></div>
         <div class="line year-line w51"></div>
@@ -1057,21 +1377,34 @@
         <div class="line year-line w9"></div>
       </div>
       <div class="square-markers"></div>
-      <div class="line-markers"></div>
+      <div class="line-markers">		
+	  </div>
       <div class="decade-barcode flip">
         <img src="images/Decades/DEC_10.jpg" alt="" />
       </div>
       <div class = "years-container">
         <div class="years-centered-container">
+		<div class="year-text">
+			2010
+		</div>
           <div class = "w51">
             <img src="images/Years/2010.jpg" alt="" usemap="map2010"/>
           </div>
+		  <div class="year-text">
+			2011
+		</div>
           <div class = "w51">
             <img src="images/Years/2011.jpg" alt="" usemap="map2011"/>
           </div>
+		  <div class="year-text">
+			2012
+		</div>
           <div class = "w52">
             <img src="images/Years/2012.jpg" alt="" usemap="map2012"/>
           </div>
+		  <div class="year-text">
+			2013
+		</div>
           <div class = "w9">
             <img src="images/Years/2013.jpg" alt="" usemap="map2013"/>
           </div>
