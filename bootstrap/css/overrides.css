@@ -169,3 +169,8 @@ body{
 .line.end{
 	margin-right:0px;
 }
+
+.coverup{
+	background-color:#ffffff;
+	height:100px;
+}
