@@ -121,13 +121,15 @@ body{
 
 .w9, .w51, .w52, .w53, .w54, .w55, .w56{
 	text-align:left;
-	margin-bottom:20px;
+	margin-bottom:12px;
+	margin-top:10px;
 }
 
 .w44{
 	text-align:right;
 	margin-right:10px;
-	margin-bottom:20px;
+	margin-bottom:12px;
+	margin-top:10px;
 	position:relative;
 }
 
@@ -199,6 +201,10 @@ body{
 .empty-div-for-beginning{
 	display:inline;
 	margin-right:326px;
+}
+.empty-div-for-beginning2{
+	display:inline;
+	margin-right:80px;
 }
 
 .line.end{
