@@ -3,13 +3,20 @@
 <head>
 	<script type="text/javascript" src="jquery.js"></script>
 
-  <script type="text/javascript">	
-  $(document).ready(function(){
-   $(".flip").click(function(){
-     $(this).next().slideToggle("slow");
-   });
- });
-  </script>	
+	  <script type="text/javascript">	
+	  $(document).ready(function(){
+	   $(".flip").click(function(){
+		 $(this).next().slideToggle("slow");
+	   });
+	 });
+	  </script>	
+	 <script type="text/javascript">
+		$(document).ready(function(){
+			$(".flip2").click(function(){
+				$(this).next().slideToggle("slow");
+			});
+		});
+	</script>
   <link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
   <meta charset="utf-8">
   <title>TimeLine</title>
@@ -38,11 +45,33 @@
   <div class="container">
     <div class="page-header">
       <h1>TimeLine</h1>
+	  <div id="nav_bar">
+		<ul class = "flip2">
+			<li><a href="#">CATEGORY</a></li></ul>
+			 <ul class="hide-cats">
+				<li><a href="#">PRESIDENTIAL ELECTIONS</a></li>
+				<li><a href="#">WWII</a></li>
+				<li><a href="#">KENNEDYS</a></li>
+				<li><a href="#">HEALTH AND MEDICINE</a></li>
+				<br/>
+				<li><a href="#">SPACE EXPLORATION</a></li>				
+				<li><a href="#">NIXON</a></li>
+				<li><a href="#">HOMOSEXUALITY</a></li>
+				<li><a href="#">MIDDLE EAST</a></li>
+				<li><a href="#">COMMUNISM</a></li>
+			</ul>
+		
+	</div>
     </div>
 
     <div class="decade-container first-row" id="1920s">
+		
+		<div class="year-text">
+			<div class="empty-div-for-beginning"></div>
+			1923
+		</div>
       <div class="decade-markers">
-        <div id="empty-div-for-beginning"></div>
+        <div class="empty-div-for-beginning"></div>
         <div class="line year-line w44"></div>
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -456,6 +485,9 @@
     <!-- close decade container for 1920s -->
 
     <div class="decade-container" id="1930s">
+		<div class="year-text">
+			1930
+		</div>
       <div class="decade-markers"></div>
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -670,6 +702,9 @@
     </div>      <!-- close decade-container for 1930s -->
 
     <div class="decade-container" id="1940s">
+		<div class="year-text">
+			1940
+		</div>
       <div class="decade-markers">
         <div class="line year-line w53"></div>
         <div class="line year-line w52"></div>
@@ -726,6 +761,9 @@
 
 
     <div class="decade-container" id="1950s">
+		<div class="year-text">
+			1950
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -780,6 +818,9 @@
     </div>        <!-- close decade-container for 1950s-->
 
     <div class="decade-container" id="1960s">
+		<div class="year-text">
+			1960
+		</div>
       <div class="decade-markers">
         <div class="line year-line w53"></div>
         <div class="line year-line w53"></div>
@@ -834,6 +875,9 @@
     </div>      <!-- close decade-container for 1960s -->
 
     <div class="decade-container" id="1970s">
+		<div class="year-text">
+			1970
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -888,6 +932,9 @@
     </div>  <!-- close decade-container for 1970s -->
 
     <div class="decade-container" id="1980s">
+		<div class="year-text">
+			1980
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w52"></div>
@@ -942,6 +989,9 @@
     </div>    <!-- close decade-container for 1980s -->
 
     <div class="decade-container" id="1990s">
+		<div class="year-text">
+			1990
+		</div>
       <div class="decade-markers">
         <div class="line year-line w54"></div>
         <div class="line year-line w52"></div>
@@ -996,6 +1046,9 @@
     </div>    <!-- close decade-container for 1990s -->
 
     <div class="decade-container" id="2000s">
+		<div class="year-text">
+			2000
+		</div>
       <div class="decade-markers">
         <div class="line year-line w52"></div>
         <div class="line year-line w54"></div>
@@ -1050,6 +1103,9 @@
     </div>    <!-- close decade-container for 2000s -->
 
     <div class="decade-container last-row" id="2010s">
+	<div class="year-text">
+			2010
+	</div>
       <div class="decade-markers">
         <div class="line year-line w51"></div>
         <div class="line year-line w51"></div>
@@ -1057,7 +1113,8 @@
         <div class="line year-line w9"></div>
       </div>
       <div class="square-markers"></div>
-      <div class="line-markers"></div>
+      <div class="line-markers">		
+	  </div>
       <div class="decade-barcode flip">
         <img src="images/Decades/DEC_10.jpg" alt="" />
       </div>

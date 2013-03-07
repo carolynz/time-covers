@@ -1,9 +1,33 @@
+#nav_bar{
+	font-size: 8pt;
+	margin-right: 20px;
+}
+#nav_bar ul{
+	list-style:none;
+}
+
+.hide-cats{
+	display:none;
+}
+
+#nav_bar ul li{
+	float: right;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+#nav_bar ul li a{
+	text-decoration:none;		
+	color:#000000;
+}
+#nav_bar ul li:hover a{
+}
+
 body{
 	background:#fefefe;
 }
 
 .decade-container{
-	padding-bottom:40px;
+/*padding-bottom:40px;*/
 }
 
 .decade-container.first-row{
@@ -19,8 +43,18 @@ body{
 	text-align:left;
 }
 
+.year-text {
+	padding-top:20px;
+	text-align:left;
+}
+
 .flip{
 	cursor:pointer;
+}
+.flip2{
+	cursor:pointer;
+	font-size:9pt;
+	font-weight:bold;
 }
 
 .years-container{
@@ -162,7 +196,7 @@ body{
 	margin-right:111px;
 }
 
-#empty-div-for-beginning{
+.empty-div-for-beginning{
 	display:inline;
 	margin-right:326px;
 }
