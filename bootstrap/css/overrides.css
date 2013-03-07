@@ -1,18 +1,22 @@
+body{
+	background:#fefefe;
+}
+
 .decade-container{
 	padding-bottom:40px;
 }
 
 .decade-container.first-row{
 	text-align: right;
+	margin-right:30px;
 }
 
 .decade-container.last-row{
 	text-align: left;
 }
 
-.years-container{
-	text-align: left;
-	padding-bottom:20px;
+.decade-markers, .square-markers, .line-markers{
+	text-align:left;
 }
 
 .flip{
@@ -20,12 +24,57 @@
 }
 
 .years-container{
+	text-align: left;
+	padding-bottom:20px;
+	padding-top:20px;
 	display:none;
 	border:none;
-	-webkit-box-shadow: inset 0 0 5px 5px #6C7477;
-	box-shadow: inset 0 0 5px 5px #6C7477;
-	background: #F1F2F6;
-	margin-top: 10px;
+	-webkit-box-shadow: inset 0 0 5px 5px #e5e5e5;
+	box-shadow: inset 0 0 5px 5px #e5e5e5;
+	background: rgb(240, 240, 242);
+	height:400px;
+	overflow:scroll;
+	margin-top:20px;
+}
+
+#yc00s.years-container{
+	width:1070px;
+}
+
+#yc10s.years-container{
+	width:1070px;
+}
+
+#yc20s.years-container{
+	width:1040px;
+}
+
+#yc30s.years-container{
+	width:1040px;
+}
+
+#yc40s.years-container{
+	width:1044px;
+}
+
+#yc50s.years-container{
+	width:1044px;
+}
+
+#yc60s.years-container{
+	width:1048px;
+}
+
+#yc70s.years-container{
+	width:1046px;
+}
+
+#yc80s.years-container{
+	width:1044px;
+}
+
+#yc90s.years-container{
+	width:1050px;
 }
 
 .years-centered-container{
@@ -36,380 +85,87 @@
 	margin-right:auto;
 }
 
-.year-1923 {
+.w9, .w51, .w52, .w53, .w54, .w55, .w56{
+	text-align:left;
+	margin-bottom:20px;
+}
+
+.w44{
 	text-align:right;
-	padding-right: 10px;
-	padding-top:20px;
+	margin-right:10px;
+	margin-bottom:20px;
 }
 
-.year-1924 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1925 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1926 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1927 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1928 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1929 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1930 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1931 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1932 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1933 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1934 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1935 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1936 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1937 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1938 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1939 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1940 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1941 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1942 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1943 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1944 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1945 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1946 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1947 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1948 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1949 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1950 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1951 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1952 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1953 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1954 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1955 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1956 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1957 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1958 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1959 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1960 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1961 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1962 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1963 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1964 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1965 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1966 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1967 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1968 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1969 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1970 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1971 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1972 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1973 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1974 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1975 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1976 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1977 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1978 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1979 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1980 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1981 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1982 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1983 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1984 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1985 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1986 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1987 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1988 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1989 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-1990 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-1991 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1992 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1993 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-1994 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1995 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1996 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1997 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1998 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-1999 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-2000 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-2001 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2002 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2003 {
-	text-align:left;
-	padding-right: 10px;
-}
-.year-2004 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2005 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2006 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2007 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2008 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2009 {
-	text-align:left;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.year-2010 {
-	padding-top:20px;
-	text-align:left;
-}
-.year-2011 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2012 {
-	text-align:left;
-	margin-top:20px;
-}
-.year-2013 {
-	text-align:left;
-	padding-right: 10px;
-}
-4
+.line{
+	/*height: 20px;*/
+	/*width: 1000px;*/
+	background: #999999;
+	opacity: 1;
+	display:inline;
 
+	/* For some nice animation on the rotates: */
+	-webkit-transition: -webkit-transform 1s;
+	   -moz-transition:    -moz-transform 1s;
+	        transition:         transform 1s;
+}
+
+.line:hover{
+	background: #C30;
+	box-shadow: 0 0 8px #C30;
+	opacity: 1;
+}
+
+.line.active{
+	background: #666;
+	box-shadow: 0 0 8px #666;
+	opacity: 1;
+}
+
+.line.w9, .line.w44, .line.w51, .line.w52, .line.w53, .line.w54, .line.w55, .line.w56{
+	padding-right: 1px;
+	padding-top:0px;
+	margin-left: 0px;
+
+	/*height: 20px;*/
+	/*width: 3px;*/
+	background: #cccccc;
+	opacity: 1;
+	display:inline;
+}
+
+.line.w44{
+	margin-right:87px;
+}
+
+.line.w51{
+	margin-right:101px;
+}
+
+.line.w52{
+	margin-right:103px;
+}
+
+.line.w53{
+	margin-right:105px;
+}
+
+.line.w54{
+	margin-right:107px;
+}
+
+.line.w55{
+	margin-right:109px;
+}
+
+.line.w56{
+	margin-right:111px;
+}
+
+#empty-div-for-beginning{
+	display:inline;
+	margin-right:326px;
+}
+
+.line.end{
+	margin-right:0px;
+}

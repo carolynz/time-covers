@@ -1,473 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 	<script type="text/javascript" src="jquery.js"></script>
-		
-		<script type="text/javascript">	
-			$(document).ready(function(){
-			$(".flip").click(function(){
-			    $(this).next().slideToggle("slow");
-			  });
-			});
-		</script>	
-	<link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
-    <meta charset="utf-8">
-    <title>TIMELine</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MIT 4.110 Design Across Scales Project 1">
-    <meta name="author" content="Carolyn Zhang">
 
-    <!-- Le styles -->
-    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="./bootstrap/css/overrides.css" rel="stylesheet">
+  <script type="text/javascript">	
+  $(document).ready(function(){
+   $(".flip").click(function(){
+     $(this).next().slideToggle("slow");
+   });
+ });
+  </script>	
+  <link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
+  <meta charset="utf-8">
+  <title>TimeLine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MIT 4.110 Design Across Scales Project 1">
+  <meta name="author" content="Carolyn Zhang">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!-- Le styles -->
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap/css/overrides.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <!-- Fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
 
-  <body>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>TimeLine</h1>
+    </div>
 
-    <div class="container">
-      <div class="page-header">
-        <h1>TIMEline</h1>
+    <div class="decade-container first-row" id="1920s">
+      <div class="decade-markers">
+        <div id="empty-div-for-beginning"></div>
+        <div class="line year-line w44"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52 end"></div>
       </div>
-      
-      <div class="decade-container first-row" id="1920s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_20.jpg" alt="" />
-		  <div class = "years-container">
-			<div class="years-centered-container">
-			<div class = "year-1923">
-				<a href="#"><img src="images/Years/1923.jpg" alt="" />
-			</div>
-			<div class = "year-1924">
-				<a href="#"><img src="images/Years/1924.jpg" alt="" />
-			</div>
-			<div class = "year-1925">
-				<a href="#"><img src="images/Years/1925.jpg" alt="" />
-			</div>
-			<div class = "year-1926">
-				<a href="#"><img src="images/Years/1926.jpg" alt="" />
-			</div>
-			<div class = "year-1927">
-				<a href="#"><img src="images/Years/1927.jpg" alt="" />
-			</div>
-			<div class = "year-1928">
-				<a href="#"><img src="images/Years/1928.jpg" alt="" />
-			</div>
-			<div class = "year-1929">
-				<a href="#"><img src="images/Years/1929.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-		</div>
-        
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_20.jpg" alt="" />
       </div>
-
-      <div class="decade-container" id="1930s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-		  <a href="#" class="flip"><img src="images/Decades/DEC_30.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1930">
-				<a href="#"><img src="images/Years/1930.jpg" alt="" />
-			</div>
-			<div class = "year-1931">
-				<a href="#"><img src="images/Years/1931.jpg" alt="" />
-			</div>
-			<div class = "year-1932">
-				<a href="#"><img src="images/Years/1932.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1933">
-				<a href="#"><img src="images/Years/1933.jpg" alt="" />
-			</div>
-			<div class = "year-1934">
-				<a href="#"><img src="images/Years/1934.jpg" alt="" />
-			</div>
-			<div class = "year-1935">
-				<a href="#"><img src="images/Years/1935.jpg" alt="" />
-			</div>
-			<div class = "year-1936">
-				<a href="#"><img src="images/Years/1936.jpg" alt="" />
-			</div>
-			<div class = "year-1937">
-				<a href="#"><img src="images/Years/1937.jpg" alt="" />
-			</div>
-			<div class = "year-1938">
-				<a href="#"><img src="images/Years/1938.jpg" alt="" />
-			</div>
-			<div class = "year-1939">
-				<a href="#"><img src="images/Years/1939.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
+      <div class = "years-container" id="yc20s">
+        <div class="years-centered-container">
+          <div class = "w44" id = "y1923">
+            <img src="images/Years/1923.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1924.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1925.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1926.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1927.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1928.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1929.jpg" alt="" />
+          </div>
         </div>
       </div>
+    </div>
+    <!-- close decade container for 1920s -->
 
-      <div class="decade-container" id="1940s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_40.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1940">
-				<a href="#"><img src="images/Years/1940.jpg" alt="" />
-			</div>
-			<div class = "year-1941">
-				<a href="#"><img src="images/Years/1941.jpg" alt="" />
-			</div>
-			<div class = "year-1942">
-				<a href="#"><img src="images/Years/1942.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1943">
-				<a href="#"><img src="images/Years/1943.jpg" alt="" />
-			</div>
-			<div class = "year-1944">
-				<a href="#"><img src="images/Years/1944.jpg" alt="" />
-			</div>
-			<div class = "year-1945">
-				<a href="#"><img src="images/Years/1945.jpg" alt="" />
-			</div>
-			<div class = "year-1946">
-				<a href="#"><img src="images/Years/1946.jpg" alt="" />
-			</div>
-			<div class = "year-1947">
-				<a href="#"><img src="images/Years/1947.jpg" alt="" />
-			</div>
-			<div class = "year-1948">
-				<a href="#"><img src="images/Years/1948.jpg" alt="" />
-			</div>
-			<div class = "year-1949">
-				<a href="#"><img src="images/Years/1949.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-		</div>
-		</div>
-		
-
-      <div class="decade-container" id="1950s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_50.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1950">
-				<a href="#"><img src="images/Years/1950.jpg" alt="" />
-			</div>
-			<div class = "year-1951">
-				<a href="#"><img src="images/Years/1951.jpg" alt="" />
-			</div>
-			<div class = "year-1952">
-				<a href="#"><img src="images/Years/1952.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1953">
-				<a href="#"><img src="images/Years/1953.jpg" alt="" />
-			</div>
-			<div class = "year-1954">
-				<a href="#"><img src="images/Years/1954.jpg" alt="" />
-			</div>
-			<div class = "year-1955">
-				<a href="#"><img src="images/Years/1955.jpg" alt="" />
-			</div>
-			<div class = "year-1956">
-				<a href="#"><img src="images/Years/1956.jpg" alt="" />
-			</div>
-			<div class = "year-1957">
-				<a href="#"><img src="images/Years/1957.jpg" alt="" />
-			</div>
-			<div class = "year-1958">
-				<a href="#"><img src="images/Years/1958.jpg" alt="" />
-			</div>
-			<div class = "year-1959">
-				<a href="#"><img src="images/Years/1959.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-		</div>
-		</div>
-		
-
-      <div class="decade-container" id="1960s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_60.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1960">
-				<a href="#"><img src="images/Years/1960.jpg" alt="" />
-			</div>
-			<div class = "year-1961">
-				<a href="#"><img src="images/Years/1961.jpg" alt="" />
-			</div>
-			<div class = "year-1962">
-				<a href="#"><img src="images/Years/1962.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1963">
-				<a href="#"><img src="images/Years/1963.jpg" alt="" />
-			</div>
-			<div class = "year-1964">
-				<a href="#"><img src="images/Years/1964.jpg" alt="" />
-			</div>
-			<div class = "year-1965">
-				<a href="#"><img src="images/Years/1965.jpg" alt="" />
-			</div>
-			<div class = "year-1966">
-				<a href="#"><img src="images/Years/1966.jpg" alt="" />
-			</div>
-			<div class = "year-1967">
-				<a href="#"><img src="images/Years/1967.jpg" alt="" />
-			</div>
-			<div class = "year-1968">
-				<a href="#"><img src="images/Years/1968.jpg" alt="" />
-			</div>
-			<div class = "year-1969">
-				<a href="#"><img src="images/Years/1969.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-		</div>
-		</div>
-        
-
-      <div class="decade-container" id="1970s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_70.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1970">
-				<a href="#"><img src="images/Years/1970.jpg" alt="" />
-			</div>
-			<div class = "year-1971">
-				<a href="#"><img src="images/Years/1971.jpg" alt="" />
-			</div>
-			<div class = "year-1972">
-				<a href="#"><img src="images/Years/1972.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1973">
-				<a href="#"><img src="images/Years/1973.jpg" alt="" />
-			</div>
-			<div class = "year-1974">
-				<a href="#"><img src="images/Years/1974.jpg" alt="" />
-			</div>
-			<div class = "year-1975">
-				<a href="#"><img src="images/Years/1975.jpg" alt="" />
-			</div>
-			<div class = "year-1976">
-				<a href="#"><img src="images/Years/1976.jpg" alt="" />
-			</div>
-			<div class = "year-1977">
-				<a href="#"><img src="images/Years/1977.jpg" alt="" />
-			</div>
-			<div class = "year-1978">
-				<a href="#"><img src="images/Years/1978.jpg" alt="" />
-			</div>
-			<div class = "year-1979">
-				<a href="#"><img src="images/Years/1979.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-		</div>
-        </div>
-
-      <div class="decade-container" id="1980s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_80.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1980">
-				<a href="#"><img src="images/Years/1980.jpg" alt="" />
-			</div>
-			<div class = "year-1981">
-				<a href="#"><img src="images/Years/1981.jpg" alt="" />
-			</div>
-			<div class = "year-1982">
-				<a href="#"><img src="images/Years/1982.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1983">
-				<a href="#"><img src="images/Years/1983.jpg" alt="" />
-			</div>
-			<div class = "year-1984">
-				<a href="#"><img src="images/Years/1984.jpg" alt="" />
-			</div>
-			<div class = "year-1985">
-				<a href="#"><img src="images/Years/1985.jpg" alt="" />
-			</div>
-			<div class = "year-1986">
-				<a href="#"><img src="images/Years/1986.jpg" alt="" />
-			</div>
-			<div class = "year-1987">
-				<a href="#"><img src="images/Years/1987.jpg" alt="" />
-			</div>
-			<div class = "year-1988">
-				<a href="#"><img src="images/Years/1988.jpg" alt="" />
-			</div>
-			<div class = "year-1989">
-				<a href="#"><img src="images/Years/1989.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-		</div>
-        </div>
-
-      <div class="decade-container" id="1990s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_90.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-1990">
-				<a href="#"><img src="images/Years/1990.jpg" alt="" />
-			</div>
-			<div class = "year-1991">
-				<a href="#"><img src="images/Years/1991.jpg" alt="" />
-			</div>
-			<div class = "year-1992">
-				<a href="#"><img src="images/Years/1992.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-1993">
-				<a href="#"><img src="images/Years/1993.jpg" alt="" />
-			</div>
-			<div class = "year-1994">
-				<a href="#"><img src="images/Years/1994.jpg" alt="" />
-			</div>
-			<div class = "year-1995">
-				<a href="#"><img src="images/Years/1995.jpg" alt="" />
-			</div>
-			<div class = "year-1996">
-				<a href="#"><img src="images/Years/1996.jpg" alt="" />
-			</div>
-			<div class = "year-1997">
-				<a href="#"><img src="images/Years/1997.jpg" alt="" />
-			</div>
-			<div class = "year-1998">
-				<a href="#"><img src="images/Years/1998.jpg" alt="" />
-			</div>
-			<div class = "year-1999">
-				<a href="#"><img src="images/Years/1999.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-	  </div>
+    <div class="decade-container" id="1930s">
+      <div class="decade-markers"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w51"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52 end"></div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_30.jpg" alt="" />
       </div>
+      <div class = "years-container" id="yc30s">
+        <div class="years-centered-container">
+          <div class = "w52">
+            <img src="images/Years/1930.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1931.jpg" alt="" />
+          </div>
+          <div class = "w51">
+            <img src="images/Years/1932.jpg" alt="" />
+          </div>
+           <div class = "w52">
+            <img src="images/Years/1933.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1934.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1935.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1936.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1937.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1938.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1939.jpg" alt="" />
+          </div>
+        </div>  <!-- close years-centeredcontainer for 1930s -->
+      </div>    <!-- close years-container for 1930s -->
+    </div>      <!-- close decade-container for 1930s -->
 
-      <div class="decade-container" id="2000s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_0.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-2000">
-				<a href="#"><img src="images/Years/2000.jpg" alt="" />
-			</div>
-			<div class = "year-2001">
-				<a href="#"><img src="images/Years/2001.jpg" alt="" />
-			</div>
-			<div class = "year-2002">
-				<a href="#"><img src="images/Years/2002.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-2003">
-				<a href="#"><img src="images/Years/2003.jpg" alt="" />
-			</div>
-			<div class = "year-2004">
-				<a href="#"><img src="images/Years/2004.jpg" alt="" />
-			</div>
-			<div class = "year-2005">
-				<a href="#"><img src="images/Years/2005.jpg" alt="" />
-			</div>
-			<div class = "year-2006">
-				<a href="#"><img src="images/Years/2006.jpg" alt="" />
-			</div>
-			<div class = "year-2007">
-				<a href="#"><img src="images/Years/2007.jpg" alt="" />
-			</div>
-			<div class = "year-2008">
-				<a href="#"><img src="images/Years/2008.jpg" alt="" />
-			</div>
-			<div class = "year-2009">
-				<a href="#"><img src="images/Years/2009.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-	  </div>
+    <div class="decade-container" id="1940s">
+      <div class="decade-markers">
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52 end"></div>
       </div>
-
-      <div class="decade-container last-row" id="2010s">
-        <div class="decade-markers"></div>
-          <div class="square-markers"></div>
-          <div class="line-markers"></div>
-        <div class="decade-barcode">
-          <a href="#" class="flip"><img src="images/Decades/DEC_10.jpg" alt="" />
-		  <div class = "years-container">
-		  <div class="years-centered-container">
-			<div class = "year-2010">
-				<a href="#"><img src="images/Years/2010.jpg" alt="" />
-			</div>
-			<div class = "year-2011">
-				<a href="#"><img src="images/Years/2011.jpg" alt="" />
-			</div>
-			<div class = "year-2012">
-				<a href="#"><img src="images/Years/2012.jpg" alt="" />
-			</div>
-			<div class="years-centered-container">
-			<div class = "year-2013">
-				<a href="#"><img src="images/Years/2013.jpg" alt="" />
-			</div>
-		</div>
-		</div>
-        </div>
-	  </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_40.jpg" alt="" />
       </div>
+          
+      <div class = "years-container" id="yc40s">
+        <div class="years-centered-container">
+          <div class = "w53">
+            <img src="images/Years/1940.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1941.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1942.jpg" alt="" />
+          </div>
+           <div class = "w52">
+            <img src="images/Years/1943.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1944.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1945.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1946.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1947.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1948.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1949.jpg" alt="" />
+          </div>
+        </div>  <!-- close years-centered-container -->
+      </div>    <!-- close years-container -->
+    </div>      <!-- close decade-container for 1940s -->
 
-    </div> <!-- /container -->
 
+    <div class="decade-container" id="1950s">
+      <div class="decade-markers">
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_50.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc50s">
+        <div class="years-centered-container">
+          <div class = "w52">
+            <img src="images/Years/1950.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1951.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1952.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1953.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1954.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1955.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1956.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1957.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1958.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1959.jpg" alt="" />
+          </div>
+        </div>    <!-- close years-centered-container -->
+      </div>      <!-- close years-container -->
+    </div>        <!-- close decade-container for 1950s-->
 
-  </body>
+    <div class="decade-container" id="1960s">
+      <div class="decade-markers">
+        <div class="line year-line w53"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_60.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc60s">
+        <div class="years-centered-container">
+          <div class = "w53">
+            <img src="images/Years/1960.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1961.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1962.jpg" alt="" />
+          </div>
+           <div class = "w52">
+            <img src="images/Years/1963.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1964.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1965.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1966.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1967.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1968.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1969.jpg" alt="" />
+          </div>
+        </div>  <!-- close years-centered-container -->
+      </div>    <!-- close years-container -->
+    </div>      <!-- close decade-container for 1960s -->
+
+    <div class="decade-container" id="1970s">
+      <div class="decade-markers">
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_70.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc70s">
+        <div class="years-centered-container">
+          <div class = "w52">
+            <img src="images/Years/1970.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1971.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1972.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1973.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1974.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1975.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1976.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1977.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1978.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1979.jpg" alt="" />
+          </div>
+        </div>    <!-- close years-centered-container -->
+      </div>  <!-- close years-container -->
+    </div>  <!-- close decade-container for 1970s -->
+
+    <div class="decade-container" id="1980s">
+      <div class="decade-markers">
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w51"></div>
+        <div class="line year-line w53 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_80.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc80s">
+        <div class="years-centered-container">
+          <div class = "w52">
+            <img src="images/Years/1980.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1981.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1982.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1983.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1984.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1985.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1986.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1987.jpg" alt="" />
+          </div>
+          <div class = "w51">
+            <img src="images/Years/1988.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1989.jpg" alt="" />
+          </div>
+        </div>    <!-- close years-centered-container -->    
+      </div>  <!-- close years-container -->
+    </div>    <!-- close decade-container for 1980s -->
+
+    <div class="decade-container" id="1990s">
+      <div class="decade-markers">
+        <div class="line year-line w54"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w51"></div>
+        <div class="line year-line w52 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_90.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc90s">
+        <div class="years-centered-container">
+          <div class = "w54">
+            <img src="images/Years/1990.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1991.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1992.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1993.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1994.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1995.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1996.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/1997.jpg" alt="" />
+          </div>
+          <div class = "w51">
+            <img src="images/Years/1998.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/1999.jpg" alt="" />
+          </div>
+        </div>    <!-- close years-centered-container -->
+      </div>  <!-- close years-container -->
+    </div>    <!-- close decade-container for 1990s -->
+
+    <div class="decade-container" id="2000s">
+      <div class="decade-markers">
+        <div class="line year-line w52"></div>
+        <div class="line year-line w54"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w54"></div>
+        <div class="line year-line w53"></div>
+        <div class="line year-line w51"></div>
+        <div class="line year-line w54"></div>
+        <div class="line year-line w56"></div>
+        <div class="line year-line w54"></div>
+        <div class="line year-line w55 end"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_0.jpg" alt="" />
+      </div>
+      <div class = "years-container" id="yc00s">
+        <div class="years-centered-container">
+           <div class = "w52">
+            <img src="images/Years/2000.jpg" alt="" />
+          </div>
+          <div class = "w54">
+            <img src="images/Years/2001.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/2002.jpg" alt="" />
+          </div>
+          <div class = "w54">
+            <img src="images/Years/2003.jpg" alt="" />
+          </div>
+          <div class = "w53">
+            <img src="images/Years/2004.jpg" alt="" />
+          </div>
+          <div class = "w51">
+            <img src="images/Years/2005.jpg" alt="" />
+          </div>
+          <div class = "w54">
+            <img src="images/Years/2006.jpg" alt="" />
+          </div>
+          <div class = "w56">
+            <img src="images/Years/2007.jpg" alt="" />
+          </div>
+          <div class = "w54">
+            <img src="images/Years/2008.jpg" alt="" />
+          </div>
+          <div class = "w55">
+            <img src="images/Years/2009.jpg" alt="" />
+          </div>
+        </div>    <!-- close years-centered-container -->
+      </div>  <!-- close years-container -->
+    </div>    <!-- close decade-container for 2000s -->
+
+    <div class="decade-container last-row" id="2010s">
+      <div class="decade-markers">
+        <div class="line year-line w51"></div>
+        <div class="line year-line w51"></div>
+        <div class="line year-line w52"></div>
+        <div class="line year-line w9"></div>
+      </div>
+      <div class="square-markers"></div>
+      <div class="line-markers"></div>
+      <div class="decade-barcode flip">
+        <img src="images/Decades/DEC_10.jpg" alt="" />
+      </div>
+      <div class = "years-container">
+        <div class="years-centered-container">
+          <div class = "w51">
+            <img src="images/Years/2010.jpg" alt="" />
+          </div>
+          <div class = "w51">
+            <img src="images/Years/2011.jpg" alt="" />
+          </div>
+          <div class = "w52">
+            <img src="images/Years/2012.jpg" alt="" />
+          </div>
+          <div class = "w9">
+            <img src="images/Years/2013.jpg" alt="" />
+          </div>
+        </div>        <!-- close years-centered-container -->
+      </div>    <!-- close years-container -->
+    </div>    <!-- close decade-container for 2010s-->
+
+  </div> <!-- /container -->
+</body>
 </html>
