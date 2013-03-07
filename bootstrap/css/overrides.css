@@ -30,6 +30,11 @@ body{
 /*padding-bottom:40px;*/
 }
 
+.decade-barcode{
+	position:relative;
+	z-index: 1;
+}
+
 .decade-container.first-row{
 	text-align: right;
 	margin-right:30px;
@@ -209,4 +214,38 @@ body{
 
 .line.end{
 	margin-right:0px;
+}
+
+.mask{
+	position:absolute;
+	opacity: 0.9;
+	top:0;
+	left:0;
+	z-index:3;
+	margin-bottom:-100px;
+	height:100px;
+	display:none;
+}
+
+.mask-container{
+	position:absolute;
+	top:0;
+	right:0;
+	width:700px;
+	padding-top:100px;
+	text-align: right;
+	padding-left:326px;
+}
+
+.mask.first-row{
+	position:absolute;
+	right:0;
+	/*padding-right:;*/
+	display:none;
+	/*margin-right:326px;*/
+}
+
+.barcode{
+	position:absolute;
+	z-index:0;
 }

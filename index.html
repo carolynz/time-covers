@@ -11,14 +11,55 @@
 				clicked.slideToggle("slow");
 			});
 		});
+
+    $(document).ready(function(){
+      $(".flip2").click(function(){
+        $(this).next().slideToggle("slow");
+      });
+    });
+
+    $(document).ready(function(){
+      $(".flip3").click(function(){
+        if ($(this).css('font-weight') == "bold"){
+          $(this).css('font-weight', 'normal');
+        } else {
+          $(this).css('font-weight', 'bold');
+          $(".flip3").not(this).css('font-weight', 'normal');
+        }
+
+        if ($(this).attr('id') == "pres"){
+          $(".mask:not(.presidential)").hide();
+          $(".presidential").toggle();
+        }else if ($(this).attr('id') == "wwii"){
+          $(".mask:not(.wwii)").hide();
+          $(".wwii").toggle();
+        }else if ($(this).attr('id') == "kenn"){
+          $(".mask:not(.kennedys)").hide();
+          $(".kennedys").toggle();
+        }else if ($(this).attr('id') == "health"){
+          $(".mask:not(.health)").hide();
+          $(".health").toggle();
+        }else if ($(this).attr('id') == "space"){
+          $(".mask:not(.space)").hide();
+          $(".space").toggle();
+        }else if ($(this).attr('id') == "nixon"){
+          $(".mask:not(.nixon)").hide();
+          $(".nixon").toggle();
+        }else if ($(this).attr('id') == "gay"){
+          $(".mask:not(.homosexuality)").hide();
+          $(".homosexuality").toggle();
+        }else if ($(this).attr('id') == "midd"){
+          $(".mask:not(.middleeast)").hide();
+          $(".middleeast").toggle();
+        }else if ($(this).attr('id') == "comm"){
+          $(".mask:not(.communism)").hide();
+          $(".communism").toggle();
+        }
+      });
+    });
 	  </script>	
-	 <script type="text/javascript">
-		$(document).ready(function(){
-			$(".flip2").click(function(){
-				$(this).next().slideToggle("slow");
-			});
-		});
-	</script>
+
+
   <link rel="shortcut icon" href="http://img.timeinc.net/time/favicon.ico">	
   <meta charset="utf-8">
   <title>TimeLine</title>
@@ -51,16 +92,16 @@
 		<ul class = "flip2">
 			<li><a href="#">CATEGORY</a></li></ul>
 			 <ul class="hide-cats">
-				<li><a href="#">PRESIDENTIAL ELECTIONS</a></li>
-				<li><a href="#">WWII</a></li>
-				<li><a href="#">KENNEDYS</a></li>
-				<li><a href="#">HEALTH AND MEDICINE</a></li>
+				<li><a href="#" class="flip3" id = "pres">PRESIDENTIAL ELECTIONS</a></li>
+				<li><a href="#" class="flip3" id = "wwii">WWII</a></li>
+				<li><a href="#" class="flip3" id = "kenn">KENNEDYS</a></li>
+				<li><a href="#" class="flip3" id = "health">HEALTH & MEDICINE</a></li>
 				<br/>
-				<li><a href="#">SPACE EXPLORATION</a></li>				
-				<li><a href="#">NIXON</a></li>
-				<li><a href="#">HOMOSEXUALITY</a></li>
-				<li><a href="#">MIDDLE EAST</a></li>
-				<li><a href="#">COMMUNISM</a></li>
+				<li><a href="#" class="flip3" id = "space">SPACE EXPLORATION</a></li>				
+				<li><a href="#" class="flip3" id = "nixon">NIXON</a></li>
+				<li><a href="#" class="flip3" id = "gay">HOMOSEXUALITY</a></li>
+				<li><a href="#" class="flip3" id = "midd">MIDDLE EAST</a></li>
+				<li><a href="#" class="flip3" id = "comm">COMMUNISM</a></li>
 			</ul>
 		
 	</div>
@@ -85,6 +126,17 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <div class"mask-container w44">
+          <img class="mask health first-row" src = "images/Masks/mask_health_dec_20.png" alt="" />
+          <img class="mask presidential first-row" src = "images/Masks/mask_presidential_dec_20.png" alt="" />
+          <img class="mask wwii first-row" src = "images/Masks/mask_wwii_dec_20.png" alt="" />
+          <img class="mask kennedys first-row" src = "images/Masks/mask_kennedys_dec_20.png" alt="" />
+          <img class="mask space first-row" src = "images/Masks/mask_space_dec_20.png" alt="" />
+          <img class="mask nixon first-row" src = "images/Masks/mask_nixon_dec_20.png" alt="" />
+          <img class="mask homosexuality first-row" src = "images/Masks/mask_homosexuality_dec_20.png" alt="" />
+          <img class="mask middleeast first-row" src = "images/Masks/mask_middleeast_dec_20.png" alt="" />
+          <img class="mask communism first-row" src = "images/Masks/mask_communism_dec_20.png" alt="" />
+        </div>
         <img src="images/Decades/DEC_20.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc20s">
@@ -94,7 +146,7 @@
 			1923
 		</div>
           <div class = "w44" id = "y1923">
-			<img src="images/Years/1923.jpg" alt=""usemap="mapname23" />
+			<img class="barcode" src="images/Years/1923.jpg" alt=""usemap="mapname23" />
 			<map name="mapname23">
 				<area shape="rect" coords="[0px, 0px, 10px, 100px]" href="http://www.time.com/time/covers/0,16641,19230303,00.html" alt="area alternative text" title="Mar. 3, 1923" />
 				<area shape="rect" coords="[10px, 0px, 20px, 100px]" href="http://www.time.com/time/covers/0,16641,19230310,00.html" alt="area alternative text" title="Mar. 10, 1923" />
@@ -526,6 +578,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_30.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_30.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_30.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_30.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_30.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_30.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_30.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_30.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_30.png" alt="" />        
         <img src="images/Decades/DEC_30.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc30s">
@@ -774,6 +835,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_40.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_40.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_40.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_40.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_40.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_40.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_40.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_40.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_40.png" alt="" />    
         <img src="images/Decades/DEC_40.jpg" alt="" />
       </div>
           
@@ -807,7 +877,7 @@
 			1944
 		</div>
           <div class = "w52">
-            <img src="images/Years/1944.jpg" alt="" usemap="map1944/>
+            <img src="images/Years/1944.jpg" alt="" usemap="map1944"/>
           </div>
 		  <div class="year-text">
 			1945
@@ -863,6 +933,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_50.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_50.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_50.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_50.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_50.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_50.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_50.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_50.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_50.png" alt="" />    
         <img src="images/Decades/DEC_50.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc50s">
@@ -950,6 +1029,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_60.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_60.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_60.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_60.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_60.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_60.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_60.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_60.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_60.png" alt="" />    
         <img src="images/Decades/DEC_60.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc60s">
@@ -1037,6 +1125,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_70.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_70.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_70.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_70.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_70.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_70.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_70.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_70.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_70.png" alt="" />    
         <img src="images/Decades/DEC_70.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc70s">
@@ -1124,6 +1221,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_80.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_80.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_80.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_80.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_80.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_80.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_80.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_80.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_80.png" alt="" />    
         <img src="images/Decades/DEC_80.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc80s">
@@ -1211,6 +1317,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_90.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_90.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_90.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_90.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_90.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_90.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_90.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_90.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_90.png" alt="" />    
         <img src="images/Decades/DEC_90.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc90s">
@@ -1298,6 +1413,15 @@
       <div class="square-markers"></div>
       <div class="line-markers"></div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_0.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_0.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_0.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_0.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_0.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_0.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_0.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_0.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_0.png" alt="" />    
         <img src="images/Decades/DEC_0.jpg" alt="" />
       </div>
       <div class = "years-container" id="yc00s">
@@ -1380,6 +1504,15 @@
       <div class="line-markers">		
 	  </div>
       <div class="decade-barcode flip">
+        <img class="mask health" src = "images/Masks/mask_health_dec_10.png" alt="" />
+        <img class="mask presidential" src = "images/Masks/mask_presidential_dec_10.png" alt="" />
+        <img class="mask wwii" src = "images/Masks/mask_wwii_dec_10.png" alt="" />
+        <img class="mask kennedys" src = "images/Masks/mask_kennedys_dec_10.png" alt="" />
+        <img class="mask space" src = "images/Masks/mask_space_dec_10.png" alt="" />
+        <img class="mask nixon" src = "images/Masks/mask_nixon_dec_10.png" alt="" />
+        <img class="mask homosexuality" src = "images/Masks/mask_homosexuality_dec_10.png" alt="" />
+        <img class="mask middleeast" src = "images/Masks/mask_middleeast_dec_10.png" alt="" />
+        <img class="mask communism" src = "images/Masks/mask_communism_dec_10.png" alt="" />    
         <img src="images/Decades/DEC_10.jpg" alt="" />
       </div>
       <div class = "years-container">
